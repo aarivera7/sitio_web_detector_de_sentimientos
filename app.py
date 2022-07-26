@@ -30,9 +30,18 @@ def predict():
     prediction_knn = model_knn.predict(data)
     prediction_nb = model_nb.predict(data)
     prediction_svm = model_svm.predict(data)
-    return render_template('index.html', prediction_text=f'Predicción del algoritmo KNN: {prediction_knn}\n'
-                                                         f'Predicción del algoritmo NB: {prediction_nb}\n'
-                                                         f'Predicción del algoritmo SVM: {prediction_svm}\n')
+
+    context = {
+        'prediction_knn': prediction_knn,
+        'prediction_nb': prediction_nb,
+        'prediction_svm': prediction_svm
+    }
+
+    # prediction_text = f'Predicción del algoritmo KNN: {prediction_knn}\n'
+    # 'Predicción del algoritmo NB: {prediction_nb}\n'
+    # 'Predicción del algoritmo SVM: {prediction_svm}\n'
+
+    return render_template('index.html', **context)
 
 
 if __name__ == '__main__':

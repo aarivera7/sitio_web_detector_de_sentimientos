@@ -1,0 +1,65 @@
+body{
+    background-color: ghostwhite;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+h1{
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+.listado-algoritmos{
+    font-size: 15px;
+}
+
+.predecir{
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 800px;
+    margin-right: 1rem;
+}
+.resultado_nb, .resultado_knn, .resultado_svm {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+img {
+    width: 85px;
+    height: 90px;
+}
+
+.positivo{
+    width: 4rem;
+    background-color: limegreen;
+}
+
+.negativo {
+    width: 5rem;
+    background-color: red;
+}
+
+.neutro {
+    width: 4rem;
+    background-color: yellow;
+}
+
+.none{
+    width: 25rem;
+    background-color: orange;
+}
+/*
+#button{
+    background-color: orange;
+    border-bottom-color: orange;
+    border-radius: 15px;
+    border-style: initial;
+}
+*/
